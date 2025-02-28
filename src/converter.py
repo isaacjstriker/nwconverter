@@ -23,5 +23,5 @@ def convert_csv(input_path, output_path):
 
 if __name__ == "__main__":
     input_path = "src/csv/input.csv"
-    output_path = "/csv/output.csv"
+    output_path = "src/csv/output.csv"
     convert_csv(input_path, output_path)
