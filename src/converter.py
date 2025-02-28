@@ -8,7 +8,21 @@ def process_data(df):
     """Process the data to match the format required by the proprietary program."""
     # Example processing: rename columns, change data types, etc.
     df.columns = [col.strip().lower() for col in df.columns]
+    # Create a new DataFrame with the required output columns
+    output_df = pd.DataFrame()
+
+    # Map input columns to output columns
+    output_df['number'] = df['street/house#']
+    output_df['street'] = df['street/house#']
+    output_df['city suburb'] = df['town/zip code']
+    output_df['state province'] = ''  # Assuming this data is not available in the input
+    output_df['postal code'] = df['town/zip code']
+    output_df['latitude'] = ''  # Assuming this data is not available in the input
+    output_df['longitude'] = ''  # Assuming this data is not available in the input
+    output_df['notes'] = df['comments']
+    
     # Add more processing steps as needed
+
     return df
 
 def write_csv(df, output_path):

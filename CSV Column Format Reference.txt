@@ -1,0 +1,3 @@
+Input Columns -> Town/Zip Code, Street/House#, Door to Door Work, Mailbox Y/N, Alternative Mailing Address, Phone#, Householder Name, Assigned Publisher, Phone Witnessing, Letter Writing, Comments
+
+Output Columns -> Number, Street, City Suburb, State Province, Postal Code, Latitude, Longitude, Notes
